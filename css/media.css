@@ -1,0 +1,276 @@
+@media (max-width:1600px) {
+    .nav-link{
+        padding: 30px 30px !important;
+    }
+    .navbar-brand img{height: 60px;}
+    .slide h1{
+        line-height: 60px;
+    }
+    .font60{
+        font-size: 48px;
+    }
+    .slide h2{
+        font-size: 20px;
+    }
+    .slide p{font-size: 20px;}
+    .app a img{
+        min-height: 60px;
+        max-height: 60px;
+    }
+    .section-title{font-size: 40px;}
+    .steps h4 {
+        font-size: 28px;
+    }
+    .steps .icon{
+        width: 98px;
+        height: 98px;
+    }
+    .steps .icon img {
+        min-height: 80px;
+        max-width: 80px;
+        max-height: 80px;
+        min-width: 80px;
+    }
+    .title2{
+        font-size: 28px;
+    }
+    .impact h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .testimonial_slide .testimonial_text{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .testimonial{
+        padding: 30px 40px 50px;
+    }
+    .app h2{
+        font-size: 20px;
+    }
+    .keybenifites img{
+        min-width: 100%;
+        max-width: 100%;
+        max-height: auto;
+        min-height: 400px;
+    }
+    #home_slide.owl-carousel .owl-nav button.owl-prev,#home_slide.owl-carousel .owl-nav button.owl-next{
+        width: 40px;
+        height: 40px;
+    }
+    #home_slide.owl-carousel .owl-nav button.owl-prev img,#home_slide.owl-carousel .owl-nav button.owl-next img{
+        max-height: 40px;
+        min-height: 40px;
+        max-width: 40px;
+        min-width: 40px;
+    }
+    .nav-link{
+        font-size: 18px;
+    }
+}
+@media (max-width:1366px) {
+    .app a img{
+        min-height: 50px;
+        max-height: 50px;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+    #home_slide.owl-carousel .owl-nav.disabled .owl-prev{
+         left: 15px;
+    }
+    #home_slide.owl-carousel .owl-nav.disabled .owl-next{
+        right: 15px;
+    }
+    #home_slide.owl-carousel .owl-nav button.owl-prev,#home_slide.owl-carousel .owl-nav button.owl-next{
+        width: 32px;
+        height: 32px;
+    }
+    #home_slide.owl-carousel .owl-nav button.owl-prev img,#home_slide.owl-carousel .owl-nav button.owl-next img{
+        max-height: 32px;
+        min-height: 32px;
+        max-width: 32px;
+        min-width: 32px;
+    }
+    .font60 {
+        font-size: 40px;
+    }
+    .slide h1{line-height: 52px;}
+    .keybenifites h4{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+@media (max-width:1280px) {
+    body{font-size: 14px;}
+    .font60 {
+        font-size: 32px;
+    }
+    .slide h1{line-height: 48px;}
+    .keybenifites h4{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .impact h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #home_slide.owl-carousel .owl-nav button.owl-prev,#home_slide.owl-carousel .owl-nav button.owl-next{
+        width: 32px;
+        height: 32px;
+    }
+    #home_slide.owl-carousel .owl-nav button.owl-prev img,#home_slide.owl-carousel .owl-nav button.owl-next img{
+        max-height: 32px;
+        min-height: 32px;
+        max-width: 32px;
+        min-width: 32px;
+    }
+    .owl-nav button.owl-next {
+        width: 32px;
+        height: 32px;
+    }
+    #home_slide .container{padding-left: 40px;padding-right: 40px;}
+}
+@media (max-width:1024px) {
+    .slide h2 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .font60 {
+        font-size: 28px;
+    }
+}
+@media (max-width:991px) {
+        #home_slide .container {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .slide h1 {
+            line-height: 32px;
+        }
+        .font60 {
+            font-size: 24px;
+        }
+        .slide h2 {
+            font-size: 15px;
+            line-height: 19px;
+        }
+        .app a img {
+            min-height: 40px;
+            max-height: 40px;
+        }
+        .steps .icon {
+            width: 60px;
+            height: 60px;
+        }
+        .steps .icon img {
+            min-height: 40px;
+            max-width: 40px;
+            max-height: 40px;
+            min-width: 40px;
+        }
+        .steps h4 {
+            font-size: 18px;
+        }
+        .steps p {
+            font-size: 14px;
+            line-height:19px;
+        }
+        .steps h6 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .section-title {
+            font-size: 28px;
+        }
+        .pb-60 {
+            padding-bottom: 30px;
+        }
+        
+        .pt-60 {
+            padding-top: 30px;
+        }
+        .foot-tow{
+            display: none;
+        }
+        .impact h3 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        .title2 {
+            font-size: 18px;
+        }
+        .app-down{
+            padding: 40px;
+        }
+        .app-down::before{
+            left: -80px;
+        }
+        .app-down h2{font-size: 18px;}
+        .pb-80 {
+            padding-bottom: 30px;
+        }
+        
+        .pt-80 {
+            padding-top: 30px;
+        }
+        .nav-link {
+            padding: 10px 10px !important;
+        }
+        #home_slide.owl-carousel .owl-nav.disabled .owl-prev{
+            display: none;
+       }
+       #home_slide.owl-carousel .owl-nav.disabled .owl-next{
+        display: none;
+       }
+       .navbar-brand img {
+        height: 40px;
+    }
+    .testimonial_slide .testimonial_text{
+        padding: 60px 0px 0;
+    }
+    .testimonial {
+        padding: 20px 15px 35px;
+    }
+    .keybenifites img{
+        margin: 0 auto;
+        max-height: 400px;
+        width: auto;
+        min-width: auto;
+    }
+}
+@media (max-width:767px) {
+    .keybenifites img{
+        display: none;
+    }
+    #home_slide .ing-fluid{display: none;}
+    .app-down::before{left: -140px;}
+    .app-down h2 {
+        font-size: 16px;
+    }
+    footer ul li{
+        margin-bottom: 0;
+    }
+    .about p {
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .slide {
+        padding: 60px 0 40px;
+    }
+}
+@media (max-width:575px) {
+    .keybenifites img{
+        display: none;
+    }
+    .app-down::before {
+        display: none;
+    }
+    .app-down {
+        padding:30px 20px;
+    }
+    .app a img {
+        min-height: 32px;
+        max-height: 32px;
+    }
+}

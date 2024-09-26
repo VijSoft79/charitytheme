@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Charity Africa | 404</title>
+<link rel="shortcut icon" href="images/favicon.png" />
+<!-- CSS Files -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-area center-text" style="background:linear-gradient(346deg, rgba(255,69,46,1) 0%, rgba(247,247,247,1) 33%);" >
+		
+		<div class="display-table">
+			<div class="display-table-cell">
+				
+                <img src="images/ulogo.png" alt="Charity Africa">
+                 
+				<h1 class="title bacecolor"><b>Coming Soon</b></h1>
+				<p class="desc">Our website is currently undergoing scheduled maintenance.
+					We should be back shortly. Thank you for your patience.</p>
+				
+				
+				
+				<ul class="social-btn">
+					<li class="list-heading">© Copyright Reserved 2024</li>
+				</ul>
+				
+			</div><!-- display-table -->
+		</div><!-- display-table-cell -->
+	</div><!-- main-area -->
+
+<!-- JS Files --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/custom.js"></script>
+<script>
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const image = document.getElementById('flip-image');
+    let isFlipped = false;
+
+    function flipImage() {
+        if (isFlipped) {
+            image.style.transform = 'rotateY(0deg)';
+        } else {
+            image.style.transform = 'rotateY(360deg)';
+        }
+        isFlipped = !isFlipped;
+    }
+
+    // Initial flip interval
+    flipImage(); // Optional: Start with an initial flip
+
+    // Flip the image every 5 seconds
+    setInterval(flipImage, 5000);
+});
+</script>
+</body>
+</html>
