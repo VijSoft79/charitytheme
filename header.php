@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Charity Africa | Home</title>
+<title>Charity Theme | Home</title>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.png" />
 <!-- CSS Files -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 
 <!-- NAV OPEN -->
 <nav class="navbar navbar-expand-lg bg-light sticky-top py-0">
-  <div class="container-sm"> <a class="navbar-brand" href="index.html" id="spinner"><img src="<?php bloginfo('template_directory');?>/images/logo.svg" id="flip-image" title="Charity Africa"></a>
+  <div class="container-sm"> <a class="navbar-brand" href="index.html" id="spinner"><img src="<?php echo get_header_image();?>" id="flip-image" title="Charity Theme"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle  navigation"><i class="fa fa-bars fs-3 blue_text"></i></button>
     <div class="collapse navbar-collapse" id="navbarScroll">
     <?php
@@ -31,13 +31,6 @@
         'fallback_cb' => false,
     ));
     ?>
-
-      <!-- <ul class="navbar-nav ms-auto my-2 my-lg-0" style="--bs-scroll-height: 300px;">
-        <li class="nav-item"> <a class="nav-link active" href="#home">Home</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#aboutus"> About Us</a></li>
-        <li class="nav-item"> <a class="nav-link" href="#requestaccess">How It Works</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#contactus">Contact</a></li>
-      </ul> -->
     </div>
   </div>
 </nav>

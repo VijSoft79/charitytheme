@@ -23,3 +23,16 @@ List of Functions that we are using in theme development:
 6. wp_nav_menu() // display menu on the frontend (user section)
 7. the_title() // display the name of the page 
 8. site_url() // redirect to site home page URL
+9. the_content() // this function use to display the content (description) from admin to user end
+10. get_the_content() // this function do the same use "echo" to display the content on user end 
+11. add_theme_support('post-thumbnails') // Allow feature image into admin to upload feature image use this function in admin section // 
+12. the_post_thumbnail(); // without parameter // -- function display the Image directly --//
+13. the_post_thumbnail('thumbnail'); // thumnail dimension (150x150)  //
+14. the_post_thumbnail('medium'); // Medium dimension (300x300) //
+15. the_post_thumbnail('large'); // Large dimension (1024x1024) //
+16. the_post_thumbnail('full'); // Original Image resolution //
+17. the_post_thumbnail(array(100,100)); // Other resolution (height,width) //
+18. wp_get_attachment_image_src(get_post_thumbnail_id(),'large')//-- Get Image Path --function display the image path that we can use in the Img Src Tag --//
+19. add_theme_support('custom-header) //- To display logo upload option in the admin use this function in functions.php file
+20. get_header_image() // to display the logo image on the fronet end us ethis function
+

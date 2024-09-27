@@ -366,3 +366,14 @@ line-height: 36px; background: #001D2F;border-top: 1px solid #074064;}
     display: table-cell;
     vertical-align: middle;
 }
+
+.custom-bullet-list {
+    list-style-type: disc;
+    padding: 0 0 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+.custom-bullet-list li {
+    margin-bottom: 10px;
+}

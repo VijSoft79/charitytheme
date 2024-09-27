@@ -32,7 +32,6 @@
               <div class="px-0 px-lg-5 ">
                 <img class="ing-fluid" src="<?php bloginfo('template_directory');?>/images/banner.png" title="Send Your Give-away">
               </div>
-              
             </div>
           </div>
         </div>
@@ -54,7 +53,7 @@
             <img class="ing-fluid" src="<?php bloginfo('template_directory');?>/images/step1.svg" title="Fund Your Wallet"/>
           </div>
           <h6>Fund Your Wallet</h6>
-          <p>Fund your wallet on <span class="bacecolor">Charity.Africa</span> using secure and easy methods powered by Paystack and Flutterwave</p>
+          <p>Fund your wallet using secure and convenient methods powered by our Payment Gateway.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 mb-3  mt-4 mt-sm-0">
@@ -64,7 +63,7 @@
             <img class="ing-fluid" src="<?php bloginfo('template_directory');?>/images/step2.svg" title="Convert to Token"/>
           </div>
           <h6>Convert to Tokens</h6>
-          <p>Transform your funds into unique tokens that can be sent to anyone in need, without needing their bank details.</p>
+          <p>Convert your funds into unique tokens that can be sent to anyone in need, eliminating the requirement for their bank details.</p>
         </div>
       </div>
       <div class="col-md-4 mb-3 mt-4 mt-md-0">
@@ -74,7 +73,7 @@
             <img class="ing-fluid" src="<?php bloginfo('template_directory');?>/images/step3.svg" title="Send & Receive"/>
           </div>
           <h6>Send & Receive</h6>
-          <p>Easily distribute tokens to multiple recipients at once. Recipients can convert tokens back into funds in their wallets and transfer them to their bank.</p>
+          <p>Easily distribute tokens to multiple recipients simultaneously. Recipients can convert these tokens back into funds in their wallets and transfer them to their bank accounts.</p>
         </div>
       </div>
       <!--/Col-->
@@ -91,15 +90,15 @@
        <div class="col-lg-6 mb-3">
           <h2 class="section-title mb-3 mb-lg-5 pb-3">Key Benefits</h2>
           <h4>Effortless Giving</h4>
-          <p class="mb-3 mb-lg-4 pb-2">Save time and energy by sending donations and Giveaways to as many people as you want at once without the need for punching in and verifying multiple account details.</p>
+          <p class="mb-3 mb-lg-4 pb-2">Save time and energy by sending donations and giveaways to multiple recipients simultaneously, eliminating the need to enter and verify numerous account details.</p>
           <h4>Secure & Reliable</h4>
-          <p class="mb-3 mb-lg-4 pb-2">Your funds are safe, and recipients can easily access the donations through the unique token.</p>
+          <p class="mb-3 mb-lg-4 pb-2">Your funds are secure, and recipients can effortlessly access their donations using a unique token.</p>
           <h4>Wide Reach</h4>
-          <p class="mb-3 mb-lg-4 pb-2">Support communities across Nigeria, Ghana, South Africa, and Kenya with a single platform.</p>
+          <p class="mb-3 mb-lg-4 pb-2">Support communities worldwide with a single platform and provide assistance on a global scale.</p>
           <h4>Mass Distribution</h4>
-          <p class="mb-3 mb-lg-4 pb-2">Send giveaways to multiple people at once, making a broader impact.</p>
+          <p class="mb-3 mb-lg-4 pb-2">Distribute giveaways to multiple recipients simultaneously, amplifying your impact and reaching a wider audience.</p>
           <h4>Weekly & Monthly Donation Update</h4>
-          <p>Get weekly and monthly summary updates of how much you have given to charity to experience that innermost satisfaction and fulfillment of your benevolence</p>
+          <p>Receive weekly and monthly summary updates on your charitable contributions, allowing you to experience the profound satisfaction and fulfillment that comes from your generosity.</p>
       </div>
       <!--/Col--> 
       <div class="col-lg-6 mb-3 text-center">
@@ -134,15 +133,6 @@
                 <p class="testimonial_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
                 <p class="testimonial_bane">Du Plessis</p>
               </div>
-              <div class="item text-center">
-                <p class="testimonial_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
-                <p class="testimonial_bane">Du Plessis</p>
-              </div>
-              <div class="item text-center">
-                <p class="testimonial_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
-                <p class="testimonial_bane">Du Plessis</p>
-              </div>
-
             </div>
           </div>
          
@@ -157,7 +147,7 @@
             <div class="testimonial-area w-100">
               <div class="impact text-center">
                 <h1 class="font60 fw-bold bacecolor mb-4">Join 25,000+</h1>
-                <h3>donors making a difference in the lives of people using <span class="bacecolor d-block fw-semibold">Charity.Africa</span> </h3>
+                <h3>donors making a difference in the lives of people using <span class="bacecolor d-block fw-semibold">Charity Theme</span> </h3>
               </div>
             </div>
         </div>
@@ -236,7 +226,30 @@
       <div class="col-lg-6 mb-3 item-self-strech">
         <div class="ps-0 ps-lg-5">
            <h4 class="fw-semibold text-uppercase">Mission Statement</h4>
-           <p><span class="bacecolor fw-bold">Charity.Africa</span>  is dedicated to making charity simple, secure, and impactful across Africa. We bridge the gap between donors and recipients, ensuring every contribution counts. At <span class="bacecolor fw-bold">Charity.Africa</span>, our mission is to revolutionize the way charity is given across Africa by leveraging technology to simplify and amplify the impact of giving. We aim to empower donors to make a difference in the lives of millions across Nigeria, Ghana, South Africa, and Kenya, without the complexities of traditional donation methods. Our platform bridges the gap between generosity and need, ensuring that every act of kindness reaches its intended destination swiftly, securely, and efficiently.</p>
+           <p>
+            <span class="bacecolor fw-bold">Charity Theme</span> is designed to provide developers with a seamless, robust, and customizable solution to build charity-focused websites on WordPress. With a user-friendly interface and powerful integration tools, the Charity Theme enables developers to effortlessly create secure and impactful donation platforms, ensuring that every feature aligns with the mission of facilitating meaningful contributions.
+          </p>
+          <h4 class="fw-semibold text-uppercase">OUR THEME OFFERS</h4>
+          <ul class="custom-bullet-list">
+          <li>
+            <strong class="bacecolor fw-bold">Advanced Donation Systems</strong> simplified and secure donation processes with multiple payment gateways.
+          </li>
+          <li>
+            <strong class="bacecolor fw-bold">Customizable Layouts</strong> flexible design options to tailor the look and feel of charity sites, aligning with each organization's goals.
+          </li>
+          <li>
+            <strong class="bacecolor fw-bold">Real-Time Impact Tracking</strong> tools to showcase donor impact, ensuring transparency and trust.
+          </li>
+          <li>
+            <strong class="bacecolor fw-bold">Mobile Responsiveness</strong> fully optimized for mobile, ensuring accessibility for users across all devices.
+          </li>
+          <li>
+            <strong class="bacecolor fw-bold">Security and Compliance</strong> built-in features for security, ensuring donor data and transactions are safe and compliant with relevant regulations.
+          </li>
+        </ul>
+          <p>
+            At Charity Theme, our mission is to empower developers with the tools to create platforms that make giving easy, secure, and effective, transforming the way charitable organizations engage with their supporters worldwide.
+          </p>
         </div>
       </div>
       <!--/Col--> 
@@ -245,8 +258,17 @@
       <div class="col-lg-6 mb-3 item-self-strech">
         <div class="ps-0 ps-lg-5">
            <h4 class="fw-semibold text-uppercase">Our Purpose</h4>
-           <p><span class="bacecolor fw-bold">Charity.Africa</span> is designed to eliminate the barriers that often hinder charitable giving. We recognize the challenges donors face in trying to support those in need—ranging from the time-consuming process of obtaining bank details, verifying them, to the difficulty of distributing funds to multiple recipients. Our platform addresses these issues by providing a seamless solution where users can easily fund their wallets, convert those funds into unique tokens, and distribute them to individuals across Africa without requiring bank details. Recipients can then convert these tokens back into funds and transfer them to their preferred bank accounts.</p>
-           <p>By simplifying the process, <span class="bacecolor fw-bold">Charity.Africa</span> not only saves donors time and effort but also expands their reach, allowing them to impact more lives with just a few clicks.</p>
+<p>As developers of the Charity Theme, our purpose is to provide a powerful, versatile, and secure tool that enables organizations and individuals to create charity-focused websites with ease. We aim to simplify the process of building platforms that connect donors with causes in need, empowering nonprofits and charity organizations to make a meaningful impact <strong>worldwide</strong>.</p>
+<p>Our goal is to ensure that every website built with the Charity Theme can:</p>
+<ul class="custom-bullet-list">
+    <li><strong class="bacecolor fw-bold">Facilitate Seamless Donations:</strong> Integrate user-friendly and secure donation systems, ensuring contributions are processed swiftly and transparently.</li>
+    <li><strong class="bacecolor fw-bold">Amplify Outreach Globally:</strong> Equip organizations with customizable layouts and mobile-responsive designs that enhance visibility and engagement across all devices.</li>
+    <li><strong class="bacecolor fw-bold">Foster Trust and Transparency:</strong> Offer features that showcase real-time donation tracking and impact reporting, strengthening donor confidence <strong>worldwide</strong>.</li>
+    <li><strong class="bacecolor fw-bold">Support Diverse Causes:</strong> Provide flexibility for developers to build platforms that cater to various charitable initiatives, whether local or international.</li>
+    <li><strong class="bacecolor fw-bold">Ensure Compliance and Security:</strong> Prioritize data protection and compliance with relevant regulations to safeguard donors and recipients <strong>globally</strong>.</li>
+</ul>
+<p>Ultimately, our purpose is to help developers build platforms that turn generosity into action, driving meaningful change <strong>across the globe</strong>. We believe that through technology, we can simplify charity, making it more accessible, secure, and impactful for everyone involved.</p>
+
         </div>
       </div>
       <!--/Col-->  
@@ -269,7 +291,7 @@
       <div class="col-lg-6 mb-3 item-self-strech">
         <div class="ps-0 ps-lg-5">
            <h4 class="fw-semibold text-uppercase">Our vision</h4>
-           <p>To create a connected, empowered community where charitable giving is as effortless as it is meaningful, transforming the landscape of philanthropy across the continent.</p>
+           <p>We envision a world where developers can effortlessly create powerful charity websites that inspire generosity and drive impactful change worldwide. Our commitment is to provide innovative, user-friendly tools that simplify the donation process and enhance the connection between donors and recipients. Together, we aim to transform the charitable landscape globally, ensuring that every contribution counts.</p>
         </div>
       </div>
     
@@ -280,10 +302,10 @@
 </div>
 <!--Request Access Close--> 
 
-<!-- 
+
  <?php 
  get_footer(); 
  // get_footer('inner');  // for Multiple footer and for example name of the footer file name: "footer-inner.php or footer-2.php etc"
  ?>
--->
+
 

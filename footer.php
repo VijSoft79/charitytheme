@@ -17,22 +17,22 @@
         <ul>
           <li>
             <div class="address"> <i class="icon"><img src="<?php bloginfo('template_directory');?>/images/map.svg"/></i>
-              <p><span class="fw-bold">Address:</span> Charity Africa XYZ</p>
+              <p><span class="fw-bold">Address:</span> Charity Theme XYZ</p>
             </div>
           </li>
           <li>
             <div class="address"> <i class="icon"><img src="<?php bloginfo('template_directory');?>/images/phone.svg"/></i>
-              <p><span class="fw-bold">Phone:</span> +44-706126952</p>
+              <p><span class="fw-bold">Phone:</span> +91-8299248482</p>
             </div>
           </li>
           <li>
             <div class="address"> <i class="icon"><img src="<?php bloginfo('template_directory');?>/images/email.svg"/></i>
-              <p><span class="fw-bold">Email:</span> support@charity.africa</p>
+              <p><span class="fw-bold">Email:</span> info@vijsoft.com</p>
             </div>
           </li>
           <li>
             <div class="address"> <i class="icon"><img src="<?php bloginfo('template_directory');?>/images/web.svg"/></i>
-              <p>www.charity.africa</p>
+              <p>https://www.vijsoft.com/wordpress/themes</p>
             </div>
           </li>
           
@@ -52,16 +52,13 @@
           <li><a href="https://www.instagram.com/charityafricaa/" title="Instagram" target="_blank"><img src="<?php bloginfo('template_directory');?>/images/in.svg"/></a></li>
         </ul>
       </div>
-    
-    
-      
     </div>
   </div>
 </footer>
 <div class="container-fluid copyright py-4">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">  Copyright © <script>document.write(new Date().getFullYear());</script> <span class="fw-bold bacecolor">Charity.Africa</span>. All right reserved. </div>
+      <div class="col-12 text-center">Copyright © <script>document.write(new Date().getFullYear());</script> <span class="fw-bold bacecolor">Charity Theme</span>. All right reserved. </div>
     </div>
   </div>
 </div>
@@ -70,10 +67,11 @@
 <!--PAGE CONTENT END--> 
 
 <!-- JS Files --> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.bundle.min.js"></script> 
-<script src="js/owl.carousel.js"></script> 
-<script src="js/custom.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/jquery.min.js"></script> 
+<script src="<?php echo get_template_directory_uri();?>/js/bootstrap.bundle.min.js"></script> 
+<script src="<?php echo get_template_directory_uri();?>/js/owl.carousel.js"></script> 
+<script src="<?php echo get_template_directory_uri();?>/js/custom.js"></script> 
+
 <script>
 
 document.addEventListener('DOMContentLoaded', (event) => {
