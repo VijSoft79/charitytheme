@@ -377,3 +377,33 @@ line-height: 36px; background: #001D2F;border-top: 1px solid #074064;}
 .custom-bullet-list li {
     margin-bottom: 10px;
 }
+
+/* Default menu item styles */
+.nav-link, .current_page_item a, .current_page_parent a {
+    font-size: 20px;                     /* Font size */
+    color: #cd5d4f;                      /* Default text color */
+    font-weight: 600;                    /* Font weight */
+    transition: all 0.3s ease;           /* Smooth transition for background and color changes */
+    display: inline-block;               /* Ensure the square stays around the text */
+    border: 2px solid transparent;       /* Default no visible border */
+    border-radius: 5px;                  /* Optional: rounded corners for the box */
+}
+
+/* Current active menu item with red background and white text */
+.current_page_parent a, 
+.current_page_item a {
+    background-color: red;               /* Red background for the active item */
+    color: white !important;             /* White text for the active item */
+    border: 2px solid red;               /* Red border to match the background */
+    border-radius: 5px;                  /* Optional: rounded corners */
+}
+
+/* Hover effect with red background and white text */
+.nav-link:hover, 
+.current_page_parent a:hover, 
+.current_page_item a:hover {
+    background-color: red;               /* Red background fill on hover */
+    color: white !important;             /* White text on hover */
+    border: 2px solid red;               /* Red border on hover */
+    border-radius: 5px;                  /* Optional: rounded corners */
+}
