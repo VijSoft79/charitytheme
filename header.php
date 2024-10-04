@@ -12,6 +12,7 @@
 <link href="<?php echo get_template_directory_uri();?>/css/owl.carousel.min.css" rel="stylesheet" >
 <link href="<?php echo get_template_directory_uri();?>/css/style.css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri();?>/css/media.css" rel="stylesheet">
+<?php wp_head();?>
 </head>
 <body>
 

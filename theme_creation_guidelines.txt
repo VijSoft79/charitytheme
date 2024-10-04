@@ -34,5 +34,12 @@ List of Functions that we are using in theme development:
 17. the_post_thumbnail(array(100,100)); // Other resolution (height,width) //
 18. wp_get_attachment_image_src(get_post_thumbnail_id(),'large')//-- Get Image Path --function display the image path that we can use in the Img Src Tag --//
 19. add_theme_support('custom-header) //- To display logo upload option in the admin use this function in functions.php file
-20. get_header_image() // to display the logo image on the fronet end us ethis function
-
+20. get_header_image() // to display the logo image on the front end use this function
+21. get_the_date('F j, Y H:i:s') to Display the Date on All Blog Posts // Custom format for the date
+22. wp-page navi plugin to use for the pagination for the blogging or anyother page where wnat to add pagination
+23. wp_head(); // add this function in header.php that contain all the plugin css
+24. wp_footer(); //add this function in footer.php that contain all the plugin javascript
+25. the_permalink() // the function is used to direct to another page implement in anchor Tag
+26. single.php is used for the blog single page to display individual content of the blog post
+27. comment_form() // if you want to disply the comment form on the details or anyother page using this function 
+28. get_the_author() //to display the name of the author use this function 

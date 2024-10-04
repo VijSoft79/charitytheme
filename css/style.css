@@ -32,13 +32,6 @@ a:hover {color: var(--wrange);text-decoration: none;outline: none; -webkit-trans
 .pb-50{padding-bottom: 50px;}
 .mb-30{margin-bottom: 30px;}
 
-/*Navber*/
-.navbar-brand img{max-width: 100%;height: 72px;}
-.nav-link{font-size: 20px;padding: 40px 30px !important;color: var(--wrange);text-transform: uppercase;font-weight: 600;}
-.nav-link:focus, .nav-link:hover{color: var(--wrange);}
-.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link{
-    color: #000;
-}
 /* Home page */
 .slide_1{background: #FAF8F8;}
 .slide{position: relative;padding: 80px 0 60px;background: #FAF8F8;}
@@ -378,6 +371,33 @@ line-height: 36px; background: #001D2F;border-top: 1px solid #074064;}
     margin-bottom: 10px;
 }
 
+
+/* Navbar */
+.navbar-brand img {
+    max-width: 100%;
+    height: 72px;
+}
+
+.nav-link {
+    font-size: 20px;
+    padding: 40px 30px !important;
+    color: var(--wrange); /* Default color */
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link:focus, 
+.nav-link:hover {
+    color: var(--wrange); /* Hover color */
+}
+
+/* Ensure active link text color is white */
+.navbar-nav .nav-link.active, 
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+    color: white !important; /* Set active link text color to white */
+}
+
 /* Default menu item styles */
 .nav-link, .current_page_item a, .current_page_parent a {
     font-size: 20px;                     /* Font size */
@@ -406,4 +426,69 @@ line-height: 36px; background: #001D2F;border-top: 1px solid #074064;}
     color: white !important;             /* White text on hover */
     border: 2px solid red;               /* Red border on hover */
     border-radius: 5px;                  /* Optional: rounded corners */
+}
+
+.comment-form {
+    padding: 20px;
+  }
+  
+  /* Make the label and checkbox inline */
+  .comment-form input[type="checkbox"] {
+    display: inline-block; /* Keep checkbox inline */
+    margin-right: 5px; /* Space between checkbox and label */
+    vertical-align: middle; /* Align with label */
+  }
+  
+  .comment-form label {
+    display: inline; /* Change label to inline */
+    margin-left: 5px; /* Optional: add some space to the left of the label */
+  }
+  
+  .comment-form textarea {
+    width: 100%;
+    height: 80px;
+  }
+  
+  .comment-form input[type="text"] {
+    width: 100%;
+    height: 40px;
+  }
+
+/* Parent list item styles */
+.nav-link > li {
+    position: relative; /* Required to position the submenu correctly */
+    list-style-type: none; /* Removes bullets */
+    margin: 0;
+    padding: 0;
+}
+
+/* Submenu styles */
+.sub-menu {
+    position: absolute; /* Position submenu relative to parent */
+    top: 100%; /* Position it just below the parent li */
+    left: 0; /* Align it to the left of the parent */
+    display: none; /* Hide the submenu by default */
+    background-color: #333; /* Optional: background color for submenu */
+    padding: 0; /* Remove padding */
+}
+
+/* Ensure submenu items have no bullets */
+.sub-menu li {
+    list-style-type: none; /* Removes bullets */
+    margin: 0;
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Submenu links style */
+.sub-menu li a {
+    color: #fff !important; /* White text for submenu links */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect to display submenu */
+.nav-link > li:hover .sub-menu li{
+    display: block; /* Show submenu on hover */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
 }

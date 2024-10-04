@@ -94,5 +94,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     setInterval(flipImage, 5000);
 });
 </script>
+<?php wp_footer();?>
 </body>
 </html>
