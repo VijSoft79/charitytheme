@@ -6,6 +6,7 @@ get_header();?>
 <div class="container-fluid bg-white pt-80 pb-80 request_access" id="requestaccess">
   <div class="container">
     <div class="row">
+      <?php get_sidebar();?>
       <div class="col-md-12">
         <h2 class="section-title mb-3 mb-lg-5 pb-4 text-center">How It Works</h2>
       </div>

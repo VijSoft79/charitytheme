@@ -43,3 +43,6 @@ List of Functions that we are using in theme development:
 26. single.php is used for the blog single page to display individual content of the blog post
 27. comment_form() // if you want to disply the comment form on the details or anyother page using this function 
 28. get_the_author() //to display the name of the author use this function 
+29. dynamic_sidebar('<id of the sidebar>') // to call side bar on the sidebar.php page 
+30. get_sidebar() // to Display sidebar any where any page of the website use this function
+31. register_siderbar() //-- This function is used to enable widget sidebar in admin 
