@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Charity Theme | Home</title>
+<title><?php bloginfo('name');?> | <?php if (is_home() && is_front_page()){ echo get_the_title(); } else { wp_title();}?><?php if(is_front_page()) { echo " | "; bloginfo('description'); } ?></title>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/images/favicon.png" />
 <!-- CSS Files -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <link href="<?php echo get_template_directory_uri();?>/css/media.css" rel="stylesheet">
 <?php wp_head();?>
 </head>
-<body>
+<body <?php body_class();?>>
 
 <!-- NAV OPEN -->
 <nav class="navbar navbar-expand-lg bg-light sticky-top py-0">
@@ -22,6 +22,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle  navigation"><i class="fa fa-bars fs-3 blue_text"></i></button>
     <div class="collapse navbar-collapse" id="navbarScroll">
     <?php
+    //-- Navigation Menu --//
     wp_nav_menu(array(
         'theme_location' => 'primary-menu',
         'menu_class' => 'navbar-nav ms-auto my-2 my-lg-0',

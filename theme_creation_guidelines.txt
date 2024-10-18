@@ -45,4 +45,37 @@ List of Functions that we are using in theme development:
 28. get_the_author() //to display the name of the author use this function 
 29. dynamic_sidebar('<id of the sidebar>') // to call side bar on the sidebar.php page 
 30. get_sidebar() // to Display sidebar any where any page of the website use this function
-31. register_siderbar() //-- This function is used to enable widget sidebar in admin 
+31. register_siderbar() //-- This function is used to enable widget sidebar in admin
+32. wp_title() //function to get and display the post/page title
+33. bloginfo('name') //function to display the site title
+34. bloginfo('description') //functio is used to display the tagline of the website
+35. get_the_title() // function is used to display the name of the post/page
+36. add_theme_support('custom_background'); // function is used to enable custom background in admin and display on frontend
+37. body_class() // function to display background image on the frontend
+38. get_categories(array('texonomy'=>'category')) // this function is used to display all the post/blog categories where you want to display
+39. get_category_link() // Function is used to move to that catgory page and display their associated category based post/blog
+40. Use custom post type maker plugin to create custom post type, enable all the things to display on frontend (we can also create custom post type my coding as well)
+41. get_terms(['taxonomy'=>'news_category','hide_empty'=>false]); // this function is used for the display the categiroes of custom post type 
+42. get_terms ('orderby'=>name) // display category order by name
+43. get_terms (order=>ASC/DSEC) // display category result in ASC od DESC order
+44. get_terms(number=>1) // lmit the result how many category display at one
+45. get_terms(parent=>0) // display only parent categories sert parent => 0
+46. get_queried_object // function display all the data related to that category
+47. $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // this function is used to get the page number
+48.// Define the query args
+  $newsArr = array(
+    'post_type'      => 'news',
+    'post_status'    => 'publish',
+    'posts_per_page' => 1, // No. of page display per page
+    's'              => $searchData, // used this parameter for search result
+    'paged'          => $paged, //get the page id and pass 
+    'tax_query'      => array(
+      array(
+        'taxonomy' => 'news_category',//this is taxonomy
+        'field'    => 'term_id',
+        'terms'    => $catData->term_id //-- display data of particular taxonomy(category) 
+      )
+    )
+  );
+49. wp_pagenavi(array('query' => $newsQue)); // This pagination function is used for custom post type pagination
+50. wp_reset_postdata(); // Reset the post data to avoid conflicts   

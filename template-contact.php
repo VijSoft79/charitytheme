@@ -13,16 +13,17 @@ get_header();
       </div>
       <!--/Col--> 
       <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></p>
-        <p><strong>Phone:</strong> +123 456 7890</p>
-        <p><strong>Address:</strong> 123 Charity Street, Lagos, Nigeria</p>
-        <p><strong>Working Hours:</strong> Monday - Friday: 9 AM - 6 PM</p>
+        <p><strong>Email:</strong> <a href="mailto:info@yourwebsite.com"><?php the_field('email',20);?></a></p>
+        <p><strong>Phone:</strong> <?php the_field('phone_number','20');?></p>
+        <p><strong>Address:</strong><?php the_field('address','20');?></p>
+        <p><strong>Working Hours:</strong> <?php the_field('working_hours','20');?></p>
       </div>
       <div class="map">
         <p>Find us on Google Maps:</p>
         <!-- You can either use an image or an embedded map -->
         <!-- Option 1: Google Map Image -->
-        <img src="https://via.placeholder.com/800x400?text=Google+Map+Location" alt="Google Map Location">
+        <iframe src="<?php the_field('google_map','20');?>"></iframe>
+
         
         <!-- Option 2: Google Map Embed -->
         <!-- Uncomment this if you'd rather use an embedded map -->

@@ -6,6 +6,7 @@
     <div class="row d-flex align-items-center">      
        <div class="col-lg-6 mb-3">
           <h2 class="section-title mb-3 mb-lg-5 pb-3"><a href="<?php echo site_url();?>">Home </a> >> <?php the_title();?></h2>
+          <p><h4>Short Description:</h4> <?php the_excerpt();?></p>
           <?php the_content();?>
       </div>
       <!--/Col--> 

@@ -291,15 +291,121 @@ get_header();
            <p>We envision a world where developers can effortlessly create powerful charity websites that inspire generosity and drive impactful change worldwide. Our commitment is to provide innovative, user-friendly tools that simplify the donation process and enhance the connection between donors and recipients. Together, we aim to transform the charitable landscape globally, ensuring that every contribution counts.</p>
         </div>
       </div>
+
+      <div class="col-lg-6 mb-3 item-self-strech">
+        <div class="ps-0 ps-lg-5">
+        <h4 class="fw-semibold text-uppercase align_center">Our Blog Categories</h4>
+          <picture>
+            <source media="(min-width:991px)" srcset="<?php bloginfo('template_directory');?>/images/blog.jpg">
+            <img src="<?php bloginfo('template_directory');?>/images/blog.jpg" class="img-fluid center-image" title="Mission Statement" >
+          </picture>
+          <ul style="padding-top:25px;text-align:middle">
+          <?php 
+            $blogCat = get_categories(array('taxonomy'=>'category'));
+            foreach($blogCat as $blogValue){?>
+              <li><a href="<?php echo get_category_link($blogValue->term_id);?>"><?php echo $blogValue->cat_name; ?></a></li>
+            <?php } ?>
+            </ul>
+          </div>
+      </div>
+
+      <div class="col-lg-6 mb-3 item-self-strech">
+        <div class="ps-0 ps-lg-5">
+        <h4 class="fw-semibold text-uppercase align_center">Latest News Categories</h4>
+          <picture>
+            <source media="(min-width:991px)" srcset="<?php bloginfo('template_directory');?>/images/blog.jpg">
+            <img src="<?php bloginfo('template_directory');?>/images/blog.jpg" class="img-fluid center-image" title="Mission Statement" >
+          </picture>
+          <ul style="padding-top:25px;text-align:middle">
+          <?php 
+            $newsCat = get_terms(['taxonomy'=>'news_category','hide_empty'=>false,'orderby'=>'name','order'=>'ASC','number'=>10]);
+            // Check if $newsCat is not a WP_Error
+            if (!is_wp_error($newsCat) && count($newsCat) > 0) {
+            foreach($newsCat as $newsValue){?>
+              <li><a href="<?php echo get_category_link($newsValue->term_id);?>"><?php echo $newsValue->name.'('.$newsValue->count.')'; ?></a></li>
+              <?php
+                $newsArr = array('post_type'=>'news','post_status'=>'publish','posts_per_page' => -1,'tax_query'=> array(array('taxonomy'=>'news_category','field'=>'term_id','terms'=> $newsValue->term_id))); // Retrieve all published news posts);
+                $newsQue = new Wp_Query($newsArr);
+                if ($newsQue->have_posts())
+                {
+                  while($newsQue->have_posts())
+                  {
+                    $newsQue->the_post();
+                    $post_id = get_the_ID();
+              ?>
+               <div class="row d-flex align-items-center justify-content-center mt-5">
+          <!--/Col-->  
+          <div class="col-lg-6 mb-3 text-center ">
+            <picture>
+              <source media="(min-width:991px)" srcset="<?php echo get_the_post_thumbnail_url($post_id, 'medium'); ?>">
+              <img src="<?php echo wp_get_attachment_image_src($post_id,'medium'); ?>" class="img-fluid" title="Mission Statement" >
+            </picture>
+          </div>
+        <div class="col-lg-6 mb-3 item-self-strech">
+          <div class="ps-0 ps-lg-5">
+            <h4 class="fw-semibold text-uppercase"><?php the_title();?></h4>
+            <p>Short Description: <?php the_excerpt();?></p>
+            <p>Description: <?php the_content();?></p>
+            <p><?php echo get_the_date('F j, Y H:i:s');?></p>
+            <p><a href="<?php the_permalink();?>">Read More</a></p>
+          </div>
+        </div>
+      </div>
+                  
+               <?php }} ?>
+              <?php } } ?>
+            </ul>
+          </div>
+      </div>
+
+  <div class="container">
+    <div class="row">
+       <?php get_sidebar();?>
+      <div class="col-md-12">
+        <h2 class="section-title mb-3 mb-lg-5 pb-4 text-center">Latest News</h2>
+      </div>
+      <?php 
+       $newsArr = array('post_type'=>'news','post_status'=>'publish','posts_per_page' => -1); // Retrieve all published news posts);
+       $newsQue = new Wp_Query($newsArr);
+       if ($newsQue->have_posts())
+       {
+         while($newsQue->have_posts())
+         {
+           $newsQue->the_post();
+           $post_id = get_the_ID();
+      ?>
+      <div class="col-md-4 col-sm-6 mb-3">
+        <div class="steps">
+          <h4 class="mb-4 mb-lg-5">STEP 01</h4>
+          <div class="icon">
+            <img class="ing-fluid" src="<?php echo get_the_post_thumbnail_url($post_id,'medium'); ?>" title="<?php the_title();?>"/>
+          </div>
+          <h6><?php the_title();?></h6>
+          <p><?php the_excerpt();?></p>
+        </div>
+      </div>
+    <?php } ?>
+    <?php wp_reset_postdata(); //--Reset Post data --// ?> 
+    <?php }else{ ?>
+    <?php echo '<p>No news found.</p>'; ?>
+    <?php } ?>
+   
+        </div>
     
         <!--/Col-->
     </div>
+
+    
     
   </div>
+  
 </div>
 <!--Request Access Close--> 
 
 
+
+
+     
  <?php 
  get_footer(); 
  // get_footer('inner');  // for Multiple footer and for example name of the footer file name: "footer-inner.php or footer-2.php etc"

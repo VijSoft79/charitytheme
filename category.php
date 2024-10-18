@@ -7,6 +7,11 @@
           <?php
           if (get_query_var('pagename') == 'blog')  { // Check if the current page is "Blog"
             echo "Blog";
+          }else{
+            if (is_category()) {
+              $category = get_queried_object(); // Get the current category object
+              echo esc_html($category->name); // Display the category name
+            }
           }
           ?>
           </h2>
